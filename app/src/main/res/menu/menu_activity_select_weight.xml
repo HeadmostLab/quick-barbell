@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.activities.MainActivity">
+
+    <item
+        android:id="@+id/action_edit_weights"
+        android:orderInCategory="300"
+        android:title="@string/asw_menu_item_edit_weights"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_show_weight_history"
+        android:orderInCategory="301"
+        android:title="@string/asw_show_weight_history"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,261 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "2cfe8829448008d4a12d9ee6f16e715f",
+    "entities": [
+      {
+        "tableName": "Bar",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weight` INTEGER, `unit` INTEGER, `barType` INTEGER)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weight",
+            "columnName": "weight",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "barType",
+            "columnName": "barType",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "WeightTemplate",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `barid` INTEGER NOT NULL, `weight` INTEGER, `unit` INTEGER, `percent` REAL NOT NULL, `comment` TEXT, FOREIGN KEY(`barid`) REFERENCES `Bar`(`id`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "barid",
+            "columnName": "barid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weight",
+            "columnName": "weight",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "percent",
+            "columnName": "percent",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "comment",
+            "columnName": "comment",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_WeightTemplate_barid",
+            "unique": false,
+            "columnNames": [
+              "barid"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_WeightTemplate_barid` ON `${TABLE_NAME}` (`barid`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "Bar",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "barid"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "Disk",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`diskId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weight` INTEGER, `unit` INTEGER, `hidden` INTEGER NOT NULL DEFAULT 0)",
+        "fields": [
+          {
+            "fieldPath": "diskId",
+            "columnName": "diskId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weight",
+            "columnName": "weight",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "hidden",
+            "columnName": "hidden",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "0"
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "diskId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "BunchDiskLink",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`bunchId` INTEGER NOT NULL, `diskId` INTEGER NOT NULL, PRIMARY KEY(`bunchId`, `diskId`), FOREIGN KEY(`diskId`) REFERENCES `Disk`(`diskId`) ON UPDATE CASCADE ON DELETE CASCADE , FOREIGN KEY(`bunchId`) REFERENCES `Bunch`(`bunchId`) ON UPDATE CASCADE ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "bunchId",
+            "columnName": "bunchId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "diskId",
+            "columnName": "diskId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "bunchId",
+            "diskId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [
+          {
+            "name": "index_BunchDiskLink_bunchId",
+            "unique": false,
+            "columnNames": [
+              "bunchId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_BunchDiskLink_bunchId` ON `${TABLE_NAME}` (`bunchId`)"
+          },
+          {
+            "name": "index_BunchDiskLink_diskId",
+            "unique": false,
+            "columnNames": [
+              "diskId"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_BunchDiskLink_diskId` ON `${TABLE_NAME}` (`diskId`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "Disk",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "diskId"
+            ],
+            "referencedColumns": [
+              "diskId"
+            ]
+          },
+          {
+            "table": "Bunch",
+            "onDelete": "CASCADE",
+            "onUpdate": "CASCADE",
+            "columns": [
+              "bunchId"
+            ],
+            "referencedColumns": [
+              "bunchId"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "Bunch",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`bunchId` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weight` INTEGER NOT NULL, `count` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "bunchId",
+            "columnName": "bunchId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weight",
+            "columnName": "weight",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count",
+            "columnName": "count",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "bunchId"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2cfe8829448008d4a12d9ee6f16e715f')"
+    ]
+  }
+}

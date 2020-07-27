@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.headmostlab.quickbarbell.views.recyclerview.memoryview.views.HLWeightMemoryView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="96dp"
+    android:layout_height="96dp"
+    android:padding="4dp"
+
+    app:checkboxRadius="11dp"
+    app:commentTextPadding="10dp"
+    app:commentTextSize="15sp"
+    app:percentStrokeWidth="2.5dp"
+    app:strokeWidth="5dp"
+    app:weightTextSize="20sp"
+    app:weightTextTopPadding="30dp" />

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <objectAnimator
+        android:propertyName="scaleX"
+        android:duration="@android:integer/config_shortAnimTime"
+        android:valueFrom="0.5f"
+        android:valueTo="1f" />
+
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:duration="@android:integer/config_shortAnimTime"
+        android:valueFrom="0.5f"
+        android:valueTo="1f" />
+
+    <objectAnimator
+        android:propertyName="alpha"
+        android:duration="@android:integer/config_shortAnimTime"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:valueFrom="0"
+        android:valueTo="1" />
+
+</set>

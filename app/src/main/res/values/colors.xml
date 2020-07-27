@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    Default -->
+    <color name="colorPrimary">#B0B0B0</color>
+    <color name="colorPrimary30">#4CB0B0B0</color>
+    <color name="colorPrimaryVariant">#6C6C6C</color>
+    <color name="colorOnPrimary">#DEDEDE</color>
+    <color name="colorSecondary">#DADADA</color>
+    <color name="colorSecondaryVariant">#616161</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="colorSurface">#212121</color>
+    <color name="colorOnSurface">#d2d2d2</color>
+    <color name="colorScrim">#66333333</color>
+    <color name="colorBackground">#000000</color>
+    <color name="colorOnBackground">#DEDEDE</color>
+    <color name="colorOnBackground30">#46DEDEDE</color>
+    <color name="colorControlNormal">@color/colorOnBackground</color>
+    <color name="textColorPrimary">#d2d2d2</color>
+    <color name="textColorDark">#969696</color>
+    <color name="recycleViewBgColor">#151515</color>
+    <color name="lightColor">#b3b3b3</color>
+
+    <!--    Blue -->
+    <color name="colorPrimaryBlue">#0091ea</color>
+    <color name="colorPrimary30Blue">#4C0091ea</color>
+    <color name="colorPrimaryVariantBlue">#005296</color>
+    <color name="colorOnPrimaryBlue">#00B8D4</color>
+    <color name="colorSecondaryBlue">#00BAFF</color>
+    <color name="colorSecondaryVariantBlue">#0088a3</color>
+    <color name="colorOnSecondaryBlue">#000000</color>
+    <color name="colorBackgroundBlue">#000000</color>
+    <color name="colorOnBackgroundBlue">#C9EDFF</color>
+    <color name="colorOnBackground30Blue">#46C9EDFF</color>
+    <color name="colorSurfaceBlue">#00111F</color>
+    <color name="colorOnSurfaceBlue">#C9EDFF</color>
+    <color name="colorControlNormalBlue">@color/colorPrimaryBlue</color>
+    <color name="textColorPrimaryBlue">@color/colorOnBackgroundBlue</color>
+    <color name="textColorDarkBlue">#000096</color>
+    <color name="recycleViewBgColorBlue">#000015</color>
+    <color name="colorScrimBlue">#66000033</color>
+
+    <!--    RED-->
+    <color name="colorPrimaryRed">#ea0000</color>
+    <color name="colorPrimary30Red">#4Cea0000</color>
+    <color name="colorPrimaryVariantRed">#960000</color>
+    <color name="colorOnPrimaryRed">#d40000</color>
+    <color name="colorSecondaryRed">#ff0000</color>
+    <color name="colorSecondaryVariantRed">#a30000</color>
+    <color name="colorOnSecondaryRed">#000000</color>
+    <color name="colorBackgroundRed">#000000</color>
+    <color name="colorOnBackgroundRed">#ffc9c9</color>
+    <color name="colorOnBackground30Red">#46ffc9c9</color>
+    <color name="colorSurfaceRed">#1f0000</color>
+    <color name="colorOnSurfaceRed">#ffc9c9</color>
+    <color name="colorControlNormalRed">@color/colorPrimaryRed</color>
+    <color name="textColorPrimaryRed">@color/colorOnBackgroundRed</color>
+    <color name="textColorDarkRed">#960000</color>
+    <color name="recycleViewBgColorRed">#150000</color>
+    <color name="colorScrimRed">#66330000</color>
+
+    <!--    Green -->
+    <color name="colorPrimaryGreen">#00a150</color>
+    <color name="colorPrimary30Green">#4C00a150</color>
+    <color name="colorPrimaryVariantGreen">#004a25</color>
+    <color name="colorOnPrimaryGreen">#008744</color>
+    <color name="colorSecondaryGreen">#00b359</color>
+    <color name="colorSecondaryVariantGreen">#00572b</color>
+    <color name="colorOnSecondaryGreen">#000000</color>
+    <color name="colorBackgroundGreen">#000000</color>
+    <color name="colorOnBackgroundGreen">#c9ffe4</color>
+    <color name="colorOnBackground30Green">#46c9ffe4</color>
+    <color name="colorSurfaceGreen">#001f0f</color>
+    <color name="colorOnSurfaceGreen">#c9ffe4</color>
+    <color name="colorControlNormalGreen">@color/colorPrimaryGreen</color>
+    <color name="textColorPrimaryGreen">@color/colorOnBackgroundGreen</color>
+    <color name="textColorDarkGreen">#004a25</color>
+    <color name="recycleViewBgColorGreen">#00140a</color>
+    <color name="colorScrimGreen">#6600331a</color>
+
+    <!--    Yellow-->
+    <color name="colorPrimaryYellow">#ebbc00</color>
+    <color name="colorPrimary30Yellow">#4Cebbc00</color>
+    <color name="colorPrimaryVariantYellow">#967800</color>
+    <color name="colorOnPrimaryYellow">#d4a900</color>
+    <color name="colorSecondaryYellow">#ffcc00</color>
+    <color name="colorSecondaryVariantYellow">#a39600</color>
+    <color name="colorOnSecondaryYellow">#000000</color>
+    <color name="colorBackgroundYellow">#000000</color>
+    <color name="colorOnBackgroundYellow">#fff4c9</color>
+    <color name="colorOnBackground30Yellow">#46fff4c9</color>
+    <color name="colorSurfaceYellow">#1f1800</color>
+    <color name="colorOnSurfaceYellow">#fff4c9</color>
+    <color name="colorControlNormalYellow">@color/colorPrimaryYellow</color>
+    <color name="textColorPrimaryYellow">@color/colorOnBackgroundYellow</color>
+    <color name="textColorDarkYellow">#967800</color>
+    <color name="recycleViewBgColorYellow">#141000</color>
+    <color name="colorScrimYellow">#66332900</color>
+
+    <!--    Pink -->
+    <color name="colorPrimaryPink">#eb009c</color>
+    <color name="colorPrimary30Pink">#4Ceb009c</color>
+    <color name="colorPrimaryVariantPink">#960064</color>
+    <color name="colorOnPrimaryPink">#d4008d</color>
+    <color name="colorSecondaryPink">#ff00aa</color>
+    <color name="colorSecondaryVariantPink">#a3006d</color>
+    <color name="colorOnSecondaryPink">#000000</color>
+    <color name="colorBackgroundPink">#000000</color>
+    <color name="colorOnBackgroundPink">#ffc9ed</color>
+    <color name="colorOnBackground30Pink">#46ffc9ed</color>
+    <color name="colorSurfacePink">#1f0014</color>
+    <color name="colorOnSurfacePink">#ffc9ed</color>
+    <color name="colorControlNormalPink">@color/colorPrimaryPink</color>
+    <color name="textColorPrimaryPink">@color/colorOnBackgroundPink</color>
+    <color name="textColorDarkPink">#960064</color>
+    <color name="recycleViewBgColorPink">#14000e</color>
+    <color name="colorScrimPink">#66330022</color>
+
+    <!--    Purple -->
+    <color name="colorPrimaryPurple">#9c00eb</color>
+    <color name="colorPrimary30Purple">#4C9c00eb</color>
+    <color name="colorPrimaryVariantPurple">#640096</color>
+    <color name="colorOnPrimaryPurple">#8d00d4</color>
+    <color name="colorSecondaryPurple">#aa00ff</color>
+    <color name="colorSecondaryVariantPurple">#0088a3</color>
+    <color name="colorOnSecondaryPurple">#000000</color>
+    <color name="colorBackgroundPurple">#000000</color>
+    <color name="colorOnBackgroundPurple">#edc9ff</color>
+    <color name="colorOnBackground30Purple">#46edc9ff</color>
+    <color name="colorSurfacePurple">#14001f</color>
+    <color name="colorOnSurfacePurple">#edc9ff</color>
+    <color name="colorControlNormalPurple">@color/colorPrimaryPurple</color>
+    <color name="textColorPrimaryPurple">@color/colorOnBackgroundPurple</color>
+    <color name="textColorDarkPurple">#640096</color>
+    <color name="recycleViewBgColorPurple">#0e0014</color>
+    <color name="colorScrimPurple">#66220033</color>
+
+    <!--    Orange -->
+    <color name="colorPrimaryOrange">#eb8900</color>
+    <color name="colorPrimary30Orange">#4Ceb8900</color>
+    <color name="colorPrimaryVariantOrange">#965800</color>
+    <color name="colorOnPrimaryOrange">#d47b00</color>
+    <color name="colorSecondaryOrange">#ff9500</color>
+    <color name="colorSecondaryVariantOrange">#a35f00</color>
+    <color name="colorOnSecondaryOrange">#000000</color>
+    <color name="colorBackgroundOrange">#000000</color>
+    <color name="colorOnBackgroundOrange">#ffe9c9</color>
+    <color name="colorOnBackground30Orange">#46ffe9c9</color>
+    <color name="colorSurfaceOrange">#1f0d00</color>
+    <color name="colorOnSurfaceOrange">#ffe9c9</color>
+    <color name="colorControlNormalOrange">@color/colorPrimaryOrange</color>
+    <color name="textColorPrimaryOrange">@color/colorOnBackgroundOrange</color>
+    <color name="textColorDarkOrange">#965800</color>
+    <color name="recycleViewBgColorOrange">#140c00</color>
+    <color name="colorScrimOrange">#66331e00</color>
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shopDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="32dp"
+    tools:showIn="@layout/dialog_acquire_entitlement_decorated">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?colorPrimary"
+            android:gravity="center"
+            android:text="@string/dae_title"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="?colorOnSurface"
+            android:layout_marginTop="24dp"
+            android:text="@string/dae_description"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+        <Button
+            android:id="@+id/subscribeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?materialButtonOutlinedStyle"
+            android:text="@string/dae_subscribe"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?materialButtonOutlinedStyle"
+            android:layout_marginTop="8dp"
+            android:text="@string/dae_buy" />
+
+    </LinearLayout>
+</ScrollView>

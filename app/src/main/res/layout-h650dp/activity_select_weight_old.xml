@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.selectweight.SelectWeightActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/findButton"
+            style="?textButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asw_button_find"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarWeightPercent" />
+
+        <com.headmostlab.quickbarbell.views.HLSpinnerProgressBar
+            android:id="@+id/progressBarWeightPercent"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:handleRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/findButton"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/memoryList"
+            app:max="152"
+            app:min="48"
+            app:multiple="5"
+            app:progress="100"
+            app:showHandle="true"
+            app:strokeWidth="9dp" />
+
+        <com.headmostlab.quickbarbell.views.recyclerview.memoryview.HLWeightMemoryListView
+
+            tools:layout_height="96dp"
+            android:id="@+id/memoryList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/progressBarWeightPercent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/digitalFlywheel2" />
+
+        <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+            android:id="@+id/digitalFlywheel3"
+            android:layout_width="72dp"
+            android:layout_height="240dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:textSize="65sp"
+            app:digitSpace="65dp"
+            app:layout_constraintBottom_toBottomOf="@+id/digitalFlywheel2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/digitalFlywheel2"
+            app:showBorder="false" />
+
+        <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+            android:id="@+id/digitalFlywheel2"
+            android:layout_width="72dp"
+            android:layout_height="240dp"
+            android:textSize="65sp"
+            app:digitSpace="65dp"
+            app:layout_constraintBottom_toTopOf="@+id/memoryList"
+            app:layout_constraintEnd_toStartOf="@+id/digitalFlywheel3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/digitalFlywheel"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_chainStyle="spread" />
+
+        <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+            android:id="@+id/digitalFlywheel"
+            android:layout_width="72dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:textSize="65sp"
+            app:digitSpace="65dp"
+            app:layout_constraintBottom_toBottomOf="@+id/digitalFlywheel2"
+            app:layout_constraintEnd_toStartOf="@+id/digitalFlywheel2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center_horizontal"
+            android:text="@string/asw_title_bar_weight"
+            android:textAppearance="?textAppearanceHeadline4"
+            android:textColor="?colorPrimary"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include layout="@layout/layout_toolbar" />
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/balancedCheckBox"
+            android:textColor="?colorOnBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/asw_switch_text"
+            app:layout_constraintBottom_toBottomOf="@+id/progressBarWeightPercent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/progressBarWeightPercent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

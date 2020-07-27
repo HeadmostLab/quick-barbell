@@ -1,0 +1,127 @@
+<resources>
+
+    <style name="Scene.AssembledBarScene" parent="">
+        <item name="diskColor">?colorPrimary</item>
+    </style>
+
+    <style name="Scene.AssembledBarCardScene" parent="">
+        <item name="diskColor">?colorPrimary</item>
+        <item name="android:textColor">?colorPrimaryVariant</item>
+        <item name="cardColorFilter">?colorPrimaryVariant</item>
+    </style>
+
+    <style name="Scene.SelectBarCardScene" parent="">
+        <item name="android:textColor">?colorPrimaryVariant</item>
+        <item name="cardColorFilter">?colorPrimaryVariant</item>
+    </style>
+
+    <style name="Widget.CustomRecyclerView" parent="">
+        <item name="lineColor">?attr/colorPrimary30</item>
+        <item name="backgroundColor">?colorSurface</item>
+    </style>
+
+    <style name="Widget.BarView" parent="">
+        <item name="colorMultiply">?colorPrimaryVariant</item>
+    </style>
+
+    <style name="Widget.DiskView" parent="">
+        <item name="strokeColor">?colorPrimaryVariant</item>
+        <item name="fillColor">?colorPrimary</item>
+        <item name="fillColor2">?colorPrimary</item>
+        <item name="fillColor3">?colorSurface</item>
+    </style>
+
+    <style name="Widget.AddWeightView" parent="">
+        <item name="mainColor">?colorPrimaryVariant</item>
+    </style>
+
+    <style name="Widget.WeightMemoryView" parent="">
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="mainColor">?colorPrimaryVariant</item>
+        <item name="percentArcColor">?colorOnBackground</item>
+        <item name="historyIconColor">?colorOnPrimary</item>
+    </style>
+
+    <style name="Widget.SpinnerProgressBar" parent="">
+        <item name="strokeBgColor">?colorPrimaryVariant</item>
+
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="strokeProgressColor">?colorOnBackground</item>
+        <item name="handleColor">?colorOnBackground</item>
+    </style>
+
+    <style name="Widget.HLDottedScrollBar" parent="">
+        <item name="currentColor">?colorPrimary</item>
+        <item name="ordinaryColor">?colorPrimaryVariant</item>
+    </style>
+
+    <style name="Widget.HLDigitalFlywheel" parent="">
+        <item name="showBorder">true</item>
+        <item name="android:textColor">?colorOnBackground</item>
+        <item name="borderColor">?colorOnBackground</item>
+    </style>
+
+    <style name="Widget.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="title">" "</item>
+    </style>
+
+    <style name="ShapeAppearance.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+
+    <style name="Widget.ShopDialog" parent="">
+        <item name="shapeAppearance">?shapeAppearanceMediumComponent</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <style name="Widget.ActionBarPopup" parent="" />
+
+    <style name="Widget.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline6
+        </item>
+        <item name="android:textColor">?colorOnBackground</item>
+    </style>
+
+    <style name="ShapeAppearance.Round36" parent="ShapeAppearance.MediumComponent">
+        <item name="cornerSize">36dp</item>
+    </style>
+
+    <style name="Widget.App.Button.TextButton.IconOnly" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Round36</item>
+    </style>
+
+    <style name="SlidingDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fast_fade_in_with_scale</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_with_scale</item>
+    </style>
+
+    <style name="Dialog.Body.Text" parent="@style/MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:fontFamily">@font/comic</item>
+        <item name="fontFamily">@font/comic</item>
+    </style>
+
+    <style name="Dialog.Overlay" parent="">
+        <item name="materialAlertDialogBodyTextStyle">@style/Dialog.Body.Text</item>
+    </style>
+
+    <style name="CircleCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+</resources>

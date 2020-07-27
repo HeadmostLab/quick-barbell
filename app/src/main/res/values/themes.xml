@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="fontFamily">@font/comic</item>
+        <item name="windowActionModeOverlay">true</item>
+        <!--    Style property allows you to disable split touch events across windows,
+        by applying it to a theme for the activity or entire application.-->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <!--    attribute for view groups allows you to disable split touch events that occur between child views in a layout.-->
+        <item name="android:splitMotionEvents">false</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.MediumComponent</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SmallComponent</item>
+
+        <item name="actionBarPopupTheme">@style/Widget.ActionBarPopup</item>
+        <item name="toolbarStyle">@style/Widget.Toolbar</item>
+        <item name="shopDialogStyle">@style/Widget.ShopDialog</item>
+        <item name="textButtonStyle">@style/Widget.TextButton</item>
+        <item name="iconButtonStyle">@style/Widget.App.Button.TextButton.IconOnly</item>
+
+        <item name="digitalFlywheelStyle">@style/Widget.HLDigitalFlywheel</item>
+        <item name="dottedScrollBarViewStyle">@style/Widget.HLDottedScrollBar</item>
+        <item name="spinnerProgressBarStyle">@style/Widget.SpinnerProgressBar</item>
+        <item name="weightMemoryViewStyle">@style/Widget.WeightMemoryView</item>
+        <item name="addWeightViewStyle">@style/Widget.AddWeightView</item>
+        <item name="diskViewStyle">@style/Widget.DiskView</item>
+        <item name="barViewStyle">@style/Widget.BarView</item>
+        <item name="customRecyclerViewStyle">@style/Widget.CustomRecyclerView</item>
+        <item name="selectBarCardSceneStyle">@style/Scene.SelectBarCardScene</item>
+        <item name="assembledBarCardSceneStyle">@style/Scene.AssembledBarCardScene</item>
+        <item name="assembledBarSceneStyle">@style/Scene.AssembledBarScene</item>
+    </style>
+
+    <style name="BaseTheme.Colored">
+        <item name="colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorBackground</item> <!-- for API 15, 16-->
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary30">@color/colorPrimary30</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
+        <item name="colorOnBackground">@color/colorOnBackground</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="scrimBackground">@color/colorScrim</item>
+        <item name="colorControlNormal">@color/colorControlNormal</item>
+        <item name="lightColor">@color/lightColor</item>
+        <item name="colorOnBackground30">@color/colorOnBackground30</item>
+    </style>
+
+    <style name="BaseTheme.Colored.Blue" parent="BaseTheme.Colored">
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimary30">@color/colorPrimary30Blue</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantBlue</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryBlue</item>
+        <item name="colorSecondary">@color/colorSecondaryBlue</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlue</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryBlue</item>
+        <item name="colorSurface">@color/colorSurfaceBlue</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceBlue</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundBlue</item>
+        <item name="colorControlNormal">@color/colorControlNormalBlue</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryBlue</item>
+        <item name="colorOnBackground30">@color/colorOnBackground30Blue</item>
+    </style>
+
+    <style name="BaseTheme.Colored.Red" parent="BaseTheme.Colored">
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimary30">@color/colorPrimary30Red</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantRed</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryRed</item>
+        <item name="colorSecondary">@color/colorSecondaryRed</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantRed</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryRed</item>
+        <item name="colorSurface">@color/colorSurfaceRed</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceRed</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundRed</item>
+        <item name="colorControlNormal">@color/colorControlNormalRed</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryRed</item>
+        <item name="colorOnBackground30">@color/colorOnBackground30Red</item>
+    </style>
+
+    <style name="BaseTheme.Colored.Green" parent="BaseTheme.Colored">
+        <item name="colorPrimary">@color/colorPrimaryGreen</item>
+        <item name="colorPrimary30">@color/colorPrimary30Green</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantGreen</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryGreen</item>
+        <item name="colorSecondary">@color/colorSecondaryGreen</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantGreen</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryGreen</item>
+        <item name="colorSurface">@color/colorSurfaceGreen</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceGreen</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundGreen</item>
+        <item name="colorControlNormal">@color/colorControlNormalGreen</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryGreen</item>
+        <item name="colorOnBackground30">@color/colorOnBackground30Green</item>
+    </style>
+
+    <style name="BaseTheme.Colored.Yellow" parent="BaseTheme.Colored">
+        <item name="colorPrimary">@color/colorPrimaryYellow</item>
+        <item name="colorPrimary30">@color/colorPrimary30Yellow</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantYellow</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryYellow</item>
+        <item name="colorSecondary">@color/colorSecondaryYellow</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantYellow</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryYellow</item>
+        <item name="colorSurface">@color/colorSurfaceYellow</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceYellow</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundYellow</item>
+        <item name="colorControlNormal">@color/colorControlNormalYellow</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryYellow</item>
+        <item name="colorOnBackground30">@color/colorOnBackground30Yellow</item>
+    </style>
+
+    <style name="BaseTheme.Colored.Pink" parent="BaseTheme.Colored">
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimary30">@color/colorPrimary30Pink</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantPink</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryPink</item>
+        <item name="colorSecondary">@color/colorSecondaryPink</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPink</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryPink</item>
+        <item name="colorSurface">@color/colorSurfacePink</item>
+        <item name="colorOnSurface">@color/colorOnSurfacePink</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundPink</item>
+        <item name="colorControlNormal">@color/colorControlNormalPink</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryPink</item>
+        <item name="colorOnBackground30">@color/colorOnBackground30Pink</item>
+    </style>
+
+    <style name="BaseTheme.Colored.Purple" parent="BaseTheme.Colored">
+        <item name="colorPrimary">@color/colorPrimaryPurple</item>
+        <item name="colorPrimary30">@color/colorPrimary30Purple</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantPurple</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryPurple</item>
+        <item name="colorSecondary">@color/colorSecondaryPurple</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPurple</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryPurple</item>
+        <item name="colorSurface">@color/colorSurfacePurple</item>
+        <item name="colorOnSurface">@color/colorOnSurfacePurple</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundPurple</item>
+        <item name="colorControlNormal">@color/colorControlNormalPurple</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryPurple</item>
+        <item name="colorOnBackground30">@color/colorOnBackground30Purple</item>
+    </style>
+
+    <style name="BaseTheme.Colored.Orange" parent="BaseTheme.Colored">
+        <item name="colorPrimary">@color/colorPrimaryOrange</item>
+        <item name="colorPrimary30">@color/colorPrimary30Orange</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantOrange</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryOrange</item>
+        <item name="colorSecondary">@color/colorSecondaryOrange</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantOrange</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryOrange</item>
+        <item name="colorSurface">@color/colorSurfaceOrange</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceOrange</item>
+        <item name="colorOnBackground">@color/colorOnBackgroundOrange</item>
+        <item name="colorControlNormal">@color/colorControlNormalOrange</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryOrange</item>
+        <item name="colorOnBackground30">@color/colorOnBackground30Orange</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme.Colored" />
+
+</resources>

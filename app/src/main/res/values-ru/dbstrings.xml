@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="db_biceps">Бицепс</string>
+    <string name="db_back">Спина</string>
+    <string name="db_triceps">Трицепс</string>
+    <string name="db_bench_press">Жим лёжа</string>
+    <string name="db_squat">Приседания</string>
+    <string name="db_leg_biceps">Биц. бедра</string>
+    <string name="db_chest_flyes">Разводка</string>
+    <string name="db_shoulders">Плечи</string>
+</resources>

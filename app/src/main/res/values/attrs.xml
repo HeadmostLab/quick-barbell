@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- style ref attrs-->
+    <attr name="digitalFlywheelStyle" format="reference" />
+    <attr name="dottedScrollBarViewStyle" format="reference" />
+    <attr name="carouselViewStyle" format="reference" />
+    <attr name="assembledBarPreviewViewStyle" format="reference" />
+    <attr name="spinnerProgressBarStyle" format="reference" />
+    <attr name="weightMemoryViewStyle" format="reference" />
+    <attr name="addWeightViewStyle" format="reference" />
+    <attr name="diskViewStyle" format="reference" />
+    <attr name="barViewStyle" format="reference" />
+    <attr name="customRecyclerViewStyle" format="reference" />
+    <attr name="selectBarCardSceneStyle" format="reference" />
+    <attr name="assembledBarCardSceneStyle" format="reference" />
+    <attr name="assembledBarSceneStyle" format="reference" />
+
+    <attr name="simpleCardSceneInBarInventoryStyle" format="reference" />
+    <attr name="simpleCardSceneInSettingsStyle" format="reference" />
+
+
+
+    <attr name="shopDialogStyle" format="reference" />
+    <attr name="textButtonStyle" format="reference" />
+    <attr name="iconButtonStyle" format="reference" />
+
+    <!-- color ref attrs-->
+    <attr name="colorBackground" format="reference" />
+
+    <attr name="lightColor" format="color" />
+    <attr name="mainColor" format="color" />
+    <attr name="diskColor" format="color" />
+    <attr name="cardColorFilter" format="color" />
+    <attr name="colorPrimary30" format="color" />
+    <attr name="colorOnBackground30" format="color" />
+
+
+    <attr name="strokeWidth" format="dimension" tools:ignore="PrivateResource" />
+
+</resources>

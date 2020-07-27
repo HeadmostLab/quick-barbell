@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <activity
+            android:name="com.headmostlab.quickbarbell.views.activities.SelectBarbellActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.others.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.others.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.others.OtherSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.settings.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.diskinventory.DiskInventoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.barinventory.BarInventoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.showweights.ShowWeightsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.selectassembledbar.SelectAssembledBarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.views.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.selectweight.SelectWeightActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.headmostlab.quickbarbell.screens.weightcalculation.WeightCalculationActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

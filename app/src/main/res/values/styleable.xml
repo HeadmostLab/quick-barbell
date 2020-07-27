@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AssembledBarScene">
+        <attr name="diskColor" />
+    </declare-styleable>
+
+    <declare-styleable name="AssembledBarCardScene">
+        <attr name="android:textColor" />
+        <attr name="diskColor" />
+        <attr name="cardColorFilter" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectBarCardScene">
+        <attr name="android:textColor" />
+        <attr name="cardColorFilter" />
+    </declare-styleable>
+
+    <declare-styleable name="HLCustomRecyclerView">
+        <attr name="lineColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="HLBarView" >
+        <attr name="colorMultiply" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="HLDiskView" >
+        <attr name="strokeColor" format="color" />
+        <attr name="fillColor" format="color" />
+        <attr name="fillColor2" format="color" />
+        <attr name="fillColor3" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="HLDottedScrollBarView" >
+        <attr name="currentColor" format="color" />
+        <attr name="ordinaryColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="HLSpinnerProgressBar">
+        <attr name="strokeWidth" />
+        <attr name="strokeBgColor" format="color" />
+        <attr name="strokeProgressColor" format="color" />
+        <attr name="progress" format="float" />
+        <attr name="showHandle" format="boolean" />
+        <attr name="handleRadius" format="dimension" />
+        <attr name="handleColor" format="boolean" />
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="multiple" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="HLDigitalFlywheel">
+        <attr name="fontFamily" />
+        <attr name="android:textSize" />
+        <attr name="digitSpace" format="dimension" />
+        <attr name="showBorder" format="boolean" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="android:textColor" />
+        <attr name="borderColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="HLAddWeightView">
+        <attr name="strokeWidth" />
+        <attr name="mainColor" />
+    </declare-styleable>
+
+    <declare-styleable name="HLWeightMemoryView">
+        <attr name="weightTextSize" format="dimension" />
+        <attr name="commentTextSize" format="dimension" />
+        <attr name="strokeWidth" />
+        <attr name="percentStrokeWidth" format="dimension" />
+        <attr name="weightTextTopPadding" format="dimension" />
+        <attr name="commentTextPadding" format="dimension" />
+        <attr name="checkboxRadius" format="dimension" />
+        <attr name="android:textColor" />
+        <attr name="mainColor" />
+        <attr name="percentArcColor" format="color" />
+        <attr name="historyIconColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="HLSwitch">
+        <attr name="fontSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ShopDialog">
+        <attr name="elevation" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CarouselView">
+        <attr name="lightColor" />
+    </declare-styleable>
+
+    <declare-styleable name="AssembledBarPreviewView">
+        <attr name="lightColor" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.others.OtherSettingsActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center_horizontal"
+        android:text="@string/aos_title"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:textColor="?colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/unitGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/aos_group_box_unit"
+            android:textAppearance="?textAppearanceBody1"
+            android:textColor="?colorOnBackground" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKilogram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aos_checkbox_kilogram"
+            android:textAppearance="?textAppearanceBody1"
+            android:textColor="?colorOnBackground" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/aos_checkbox_pound"
+            android:textAppearance="?textAppearanceBody1"
+            android:textColor="?colorOnBackground"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="313dp" />
+    </RadioGroup>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/severalBarbellsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/fssu_several_barbells"
+        android:textAppearance="?textAppearanceBody1"
+        android:textColor="?colorOnBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unitGroup" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/switchHideHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/aos_switch_hide_help_icon"
+        android:textAppearance="?textAppearanceBody1"
+        android:textColor="?colorOnBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/severalBarbellsCheckBox" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchHideHelp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/themePickerRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.diskinventory.DiskInventoryActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/mainAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorBackground">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="125dp"
+                android:paddingBottom="16dp"
+                app:layout_collapseMode="parallax">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="@string/adi_title_disk_weight"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:textColor="?colorOnBackground"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+                    app:layout_constraintTop_toBottomOf="@+id/switchView"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="@string/adi_title_disk_count"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:textColor="?colorOnBackground"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+                    app:layout_constraintTop_toBottomOf="@+id/switchView"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                    <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+                        android:id="@+id/weightDigitalFlywheel1"
+                        android:layout_width="40dp"
+                        android:layout_height="170dp"
+                        android:textSize="35sp"
+                        app:digitSpace="40dp"
+                        app:layout_constraintEnd_toStartOf="@+id/weightDigitalFlywheel2"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                    <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+                        android:id="@+id/weightDigitalFlywheel2"
+                        android:layout_width="40dp"
+                        android:layout_height="170dp"
+                        android:textSize="35sp"
+                        app:digitSpace="40dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/weightDigitalFlywheel1"
+                        app:layout_constraintEnd_toStartOf="@+id/weightDigitalFlywheel3"
+                        app:layout_constraintStart_toEndOf="@+id/weightDigitalFlywheel1"
+                        app:layout_constraintTop_toTopOf="@+id/weightDigitalFlywheel1" />
+
+                    <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+                        android:id="@+id/weightDigitalFlywheel3"
+                        android:layout_width="40dp"
+                        android:layout_height="170dp"
+                        android:textColor="?colorOnBackground30"
+                        android:textSize="35sp"
+                        app:borderColor="?colorOnBackground30"
+                        app:digitSpace="40dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/weightDigitalFlywheel2"
+                        app:layout_constraintEnd_toStartOf="@+id/weightDigitalFlywheel4"
+                        app:layout_constraintStart_toEndOf="@+id/weightDigitalFlywheel2"
+                        app:layout_constraintTop_toTopOf="@+id/weightDigitalFlywheel2" />
+
+                    <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+                        android:id="@+id/weightDigitalFlywheel4"
+                        android:layout_width="40dp"
+                        android:layout_height="170dp"
+                        android:textColor="?colorOnBackground30"
+                        android:textSize="35sp"
+                        app:digitSpace="40dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/weightDigitalFlywheel3"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                        app:layout_constraintStart_toEndOf="@+id/weightDigitalFlywheel3"
+                        app:layout_constraintTop_toTopOf="@+id/weightDigitalFlywheel3"
+                        app:showBorder="false" />
+                </LinearLayout>
+
+
+                <!--                linear layout 2-->
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+                    <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+                        android:id="@+id/countDigitalFlywheel1"
+                        android:layout_width="40dp"
+                        android:layout_height="170dp"
+                        android:textSize="35sp"
+                        app:digitSpace="40dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/countDigitalFlywheel2"
+                        app:layout_constraintEnd_toStartOf="@+id/countDigitalFlywheel2"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="@+id/guideline4"
+                        app:layout_constraintTop_toTopOf="@+id/countDigitalFlywheel2" />
+
+
+                    <com.headmostlab.quickbarbell.views.HLDigitalFlywheel
+                        android:id="@+id/countDigitalFlywheel2"
+                        android:layout_width="40dp"
+                        android:layout_height="170dp"
+                        android:textSize="35sp"
+                        app:digitSpace="40dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/countDigitalFlywheel1"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4"
+                        app:showBorder="false" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/addDisk"
+                    style="?textButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/adi_set"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/barrier" />
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/switchView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    app:checkedButton="@id/kgButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:singleSelection="true">
+
+                    <com.headmostlab.quickbarbell.views.HLMaterialButtonToggle
+                        android:id="@+id/kgButton"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="kg" />
+
+                    <com.headmostlab.quickbarbell.views.HLMaterialButtonToggle
+                        android:id="@+id/lbButton"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="lb" />
+                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/barrier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="linearLayout4,linearLayout3"
+                    tools:layout_editor_absoluteY="731dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?colorBackground"
+                app:layout_collapseMode="pin">
+
+                <TextView
+                    android:id="@+id/barName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginBottom="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/adi_title"
+                    android:textAppearance="?textAppearanceHeadline4"
+                    android:textColor="?colorPrimary"
+                    android:textStyle="bold" /> />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.headmostlab.quickbarbell.views.recyclerview.weightslist.WeightsListView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.headmostlab.quickbarbell.views.HLGradientView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="top" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

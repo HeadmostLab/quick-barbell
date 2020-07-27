@@ -1,0 +1,145 @@
+<resources>
+    <!--SelectBarbellActivity-->
+    <string name="fsb_title_select_bar">Select barbell</string>
+    <!--SelectWeightActivity-->
+    <string name="asw_title_bar_weight">Enter weight</string>
+    <string name="asw_button_find">Find...</string>
+    <string name="asw_checkbox_all">All</string>
+    <string name="asw_menu_item_edit_weights">Edit templates</string>
+    <string name="asw_action_mode_select_all">Select all</string>
+    <string name="asw_action_mode_delete">Delete</string>
+    <string name="asw_action_mode_change">Change</string>
+    <string name="asw_specify_weight">Specify barbell weight</string>
+    <string name="asw_not_found">No suitable barbell set found</string>
+    <string name="asw_switch_text">Balanced</string>
+    <string name="asw_show_weight_history">Weight history</string>
+    <string name="asw_dialog_msg_delete_one">this template</string>
+    <string name="asw_dialog_msg_delete_many">these templates</string>
+    <!--SelectAssembledBarActivity-->
+    <string name="asab_title">(Target weight %s)</string>
+    <string name="asab_select_barbell_set">Select barbell set</string>
+    <!--SettingsActivity-->
+    <string name="as_bar_inventory">Barbell inventory</string>
+    <string name="as_disk_inventory">Plate inventory</string>
+    <string name="as_weight_search">Exact search of weights</string>
+    <string name="as_other_settings">Other settings</string>
+    <string name="as_help">Help</string>
+    <string name="as_about">About</string>
+    <string name="as_title">Settings</string>
+    <string name="as_default_subtitle">Barbell inventory</string>
+    <!--BarInventoryActivity-->
+    <string name="inventory_menu_item_edit">Edit</string>
+    <string name="abi_title">Barbell inventory</string>
+    <string name="abi_title_bar_form">Barbell form</string>
+    <string name="abi_title_bar_weight">Barbell weight</string>
+    <string name="abi_button_add">Add...</string>
+    <string name="inventory_action_mode_select_all">Select all</string>
+    <string name="inventory_action_mode_delete">Delete</string>
+    <string name="abi_specify_weight">Specify barbell weight</string>
+    <string name="abi_bar_added">Barbell has been added</string>
+    <string name="abi_dialog_msg_delete_one">this barbell</string>
+    <string name="abi_dialog_msg_delete_many">these barbells</string>
+    <string name="abi_action_mode_change">Change</string>
+    <!--DiskInventoryActivity-->
+    <string name="adi_title">Plate inventory</string>
+    <string name="adi_title_disk_weight">Plate weight</string>
+    <string name="adi_title_disk_count">Count</string>
+    <string name="adi_set">Set...</string>
+    <string name="adi_specify_weight">Specify plate weight</string>
+    <string name="adi_max_weight">50 is maximum weight</string>
+    <string name="adi_plate_set">Plates have been set</string>
+    <string name="adi_specify_count">Specify plate count</string>
+    <string name="adi_available_to_add">It\'s possible to add 99 plates of the same weight</string>
+    <string name="adi_even_number">Specify even number of plates</string>
+    <string name="adi_dialog_msg_delete_one">this plate</string>
+    <string name="adi_dialog_msg_delete_many">these plates</string>
+    <!--WeightCalculationActivity-->
+    <string name="awc_button_start">Start...</string>
+    <string name="awc_button_cancel">Cancel...</string>
+    <string name="awc_button_done">Done</string>
+    <string name="awc_title">Exact search</string>
+    <string name="awc_button_default_title">Start...</string>
+    <string name="awc_confirm_exit">Press again to exit</string>
+    <string name="awc_description"><![CDATA[<p>The exact search of weights allows to find all possible combinations of weights that can be made up of available disks.</p>This functionality is useful when limited number of disks are available. For example, when training outside the gym.]]></string>
+    <!--OtherSettingsActivity-->
+    <string name="aos_title">Other settings</string>
+    <string name="aos_group_box_unit">Measurement units:</string>
+    <string name="aos_checkbox_kilogram">Metric (kg)</string>
+    <string name="aos_checkbox_pound">Imperial (lb)</string>
+    <string name="aos_switch_hide_help_icon">Hide the help icon:</string>
+    <!--AboutActivity-->
+    <string name="aa_title">About</string>
+    <string name="aa_version">Version %s</string>
+    <!--HelpActivity-->
+    <string name="ah_title">Help</string>
+    <string name="ah_0">Application Setup</string>
+    <string name="ah_1">1. Go to the barbell inventory and add some barbells</string>
+    <string name="ah_2">2. Go to the plate inventory and add some plates</string>
+    <string name="ah_3">3. Go to the section “Weight search” and push the button “Start”</string>
+    <string name="ah_4">(It generates a weight table using available plates. Duration of this process directly depends on plate count)</string>
+    <string name="ah_5">Congratulations!\nSetup is finished.</string>
+    <string name="ah_6">Weight Search</string>
+    <string name="ah_7">1. Select the earlier added barbell on the application main screen</string>
+    <string name="ah_8">(For example EZ-barbell was added)</string>
+    <string name="ah_9">2. Enter required weight and push the button “Find”</string>
+    <string name="ah_10">3. Select a suitable assembled barbell</string>
+    <string name="ah_11">(There is a barbell total weight and deviation from a required weight displayed on a card)</string>
+    <string name="ah_12">4. The barbell and required plates are displayed as well as a model of assembled barbell.</string>
+    <string name="dae_title">QB Store</string>
+    <string name="dae_description">You can try the app for free for 14 days or buy it immediately to gain unlimited access.</string>
+    <string name="dae_subscribe">Try</string>
+    <string name="dae_buy">Buy</string>
+    <!--WeightHistoryGroupsActivity-->
+    <string name="awhg_weight_history">Weight history</string>
+    <!--WeightHistoryActivity-->
+    <string name="awh_action_mode_select_all">Select all</string>
+    <string name="awh_action_mode_delete">Delete</string>
+    <string name="awh_menu_item_edit">Edit</string>
+    <!--ShowWeightsActivity-->
+    <string name="asw_title">Barbell set %s</string>
+    <string name="asw_sub_title">(Target weight %s)</string>
+    <!--SelectSystemUnitFragment-->
+    <string name="fssu_title">Setting</string>
+    <string name="fssu_message">Please specify unit of weight measure:</string>
+    <string name="fssu_kilogram">Metric (kg)</string>
+    <string name="fssu_pound">Imperial (lb)</string>
+    <string name="fssu_next">Ok</string>
+    <string name="fssu_several_barbells">Show several barbell sets</string>
+
+    <string name="asset">res/%s</string>
+    <string name="prefSettings" translatable="false">preferences</string>
+
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_field_mandatory">Required field</string>
+    <string name="dialog_delete_message">Do you want to delete %s?</string>
+    <string name="dialog_range_error">Must be between %s and %s</string>
+
+    <string name="dialog_template_enter_name">Template name</string>
+    <string name="dialog_template_barbell_weight">Barbell set weight</string>
+    <string name="dialog_template_percent">Percent</string>
+    <string name="dialog_template_percent_must_be_multiple">Must be a multiple of %d</string>
+    <string name="dialog_template_balanced">Balanced</string>
+
+    <string name="dialog_bar_weight">Barbell weight</string>
+    <string name="dialog_bar_type">Barbell form</string>
+    <string name="dialog_bar_weight_scale">Should be one digit behind the point</string>
+
+    <string-array name="bar_types">
+        <item>Standard</item>
+        <item>Curl</item>
+        <item>Dumbbell</item>
+        <item>Double dumbbell</item>
+    </string-array>
+
+    <string name="colorGray">Gray</string>
+    <string name="colorBlue">Blue</string>
+    <string name="colorRed">Red</string>
+    <string name="colorGreen">Green</string>
+    <string name="colorYellow">Yellow</string>
+    <string name="colorPink">Pink</string>
+    <string name="colorPurple">Purple</string>
+    <string name="colorOrange">Orange</string>
+
+</resources>

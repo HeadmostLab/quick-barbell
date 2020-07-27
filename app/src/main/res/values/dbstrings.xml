@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="db_biceps">Biceps</string>
+    <string name="db_back">Back</string>
+    <string name="db_triceps">Triceps</string>
+    <string name="db_bench_press">Bench pres</string>
+    <string name="db_squat">Squat</string>
+    <string name="db_leg_biceps">Leg biceps</string>
+    <string name="db_chest_flyes">Chest flyes</string>
+    <string name="db_shoulders">Shoulders</string>
+</resources>
