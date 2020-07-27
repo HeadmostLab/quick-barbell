@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        config {
-            keyAlias 'key'
-            keyPassword 'Wow2019Key:=)'
-            storeFile file('E:/Users/WOW/Documents/AndroidStudioProjects/QuickBarbell/key/keystore.jks')
-            storePassword 'Wow2019:=)'
-        }
-    }
     compileSdkVersion 29
     defaultConfig {
         applicationId "com.headmostlab"
