@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:openglengine-release:unspecified@jar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/openglengine-release/build/.transforms/93832827545e240df0e4003b39621f9f/jetified-openglengine-release/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/openglengine-release/build/.transforms/93832827545e240df0e4003b39621f9f/jetified-openglengine-release/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/openglengine-release/build/.transforms/93832827545e240df0e4003b39621f9f/jetified-openglengine-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
